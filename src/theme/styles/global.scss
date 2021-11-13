@@ -9,11 +9,11 @@
   box-sizing: border-box;
   border: 0;
   outline: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
 }
 
 ul {

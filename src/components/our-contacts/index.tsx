@@ -7,29 +7,29 @@ import "./styles.scss";
 const OurContacts: React.FC = () => {
   const social_media = React.useMemo(() => {
     return [
-      { title: "Instagram", img: instagram, link: "" },
-      { title: "Linkedin", img: linkedin, link: "" },
-      { title: "Facebook", img: facebook, link: "" },
+      { title: "Instagram", img: instagram, link: "https://www.instagram.com/healthdev.io/" },
+      { title: "Linkedin", img: linkedin, link: "https://www.linkedin.com/company/healthdev" },
+      { title: "Facebook", img: facebook, link: "https://www.facebook.com/healthdev.io/" },
     ];
   }, []);
 
   return (
     <div id="OurContacts">
-      <h1>Nossos contatos</h1>
+      <h2>Nossos contatos</h2>
       <div>
         <section>
           <h3>Entre em contato conosco</h3>
           <p>
             A <strong>HealthDev</strong> é uma empresa que busca satisfazer
             totalmente a necessidade de nossos clientes, acreditamos que seu
-            <strong>problema</strong> é nosso problema.
+            <strong> problema </strong> é nosso problema.
           </p>
           <div className="divider" />
           <h4>NOSSAS REDES</h4>
           <ul>
             {social_media.map((media, index) => (
               <li key={index}>
-                <a href={media.link}>
+                <a href={media.link} target="blank">
                   <img src={media.img} alt={media.title} />
                   {media.title}
                 </a>

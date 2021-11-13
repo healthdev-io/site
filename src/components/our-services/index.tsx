@@ -3,6 +3,7 @@ import pep from "../../assets/images/pep.png";
 import telemedicine from "../../assets/images/telemedicine.png";
 import integrations from "../../assets/images/integrations.png";
 import banner from "../../assets/images/banner.png";
+import "./styles.scss";
 
 const OurServices: React.FC = () => {
   const services = React.useMemo(() => {
@@ -30,12 +31,12 @@ const OurServices: React.FC = () => {
 
   return (
     <div id="OurServices">
-      <h1>Nossos serviços</h1>
+      <h2>Nossos serviços</h2>
       <p>
         Somos especialistas em integrações com{" "}
-        <strong>softwares médicos</strong>,{" "}
+        <strong>softwares médicos</strong>,<br/>
         <strong>prontuários eletrônicos</strong>, sistemas de regulação,
-        <strong>telemedicina</strong> e muito mais.
+        <strong> telemedicina</strong> e muito mais.
       </p>
       <ul>
         {services.map((service, index) => (
@@ -49,10 +50,9 @@ const OurServices: React.FC = () => {
       <div className="banner">
         <h1>Sua clínica mais eficiente!</h1>
         <p>
-          Não deixe de entrar em contato conosco, aqui nós desenvolvemos saúde.
+          Não deixe de entrar em contato conosco, <br/> aqui nós desenvolvemos saúde.
         </p>
         <button>Entrar em contato</button>
-        <img src={banner} alt="Banner" />
       </div>
     </div>
   );

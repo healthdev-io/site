@@ -1,1 +1,113 @@
+#OurServices {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
 
+  > h2 {
+    color: #0A1A1FDE;
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 1rem;
+    &::before {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      height: 5px;
+      width: 80px;
+      border-radius: 2px;
+      background-image: linear-gradient(180deg, #0DACEE 0%, #00D7AC 100%);;
+    }
+  }
+
+  > p {
+    text-align: center;
+    line-height: 140%;
+    color: rgba(10, 26, 31, 0.87);
+    font-size: 1rem;
+
+    > strong {
+      background: -webkit-linear-gradient(#0DACEE, #08D968);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  > ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+
+    > li {
+      background-color: #F2F2F2;
+      width: calc(33% - 2rem);
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      border-radius: 4px;
+
+      > h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+        color: #0A1A1FB2;
+      }
+
+      > p {
+        line-height: 135%;
+        color: rgba(10, 26, 31, 0.7);
+      }
+
+      > img {
+        height: 185px;
+        width: 278px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.banner {
+  margin-bottom: 4rem;
+  position: relative;
+  max-width: 100vw;
+  height: 335px;
+  padding: 2rem;
+  background-image: to left linear-gradient(90deg, #0DACEE44 -27.72%, #08D96844 134.24%);
+  background-color: #F2F2F2;
+  z-index: 10;
+
+  > h1 {
+    font-size: 36px;
+    margin-bottom: 2rem;
+    background: -webkit-linear-gradient(#0DACEE, #08D968);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  > p {
+    line-height: 135%;
+    color: rgba(10, 26, 31, 0.87);
+    margin-bottom: 3rem;
+  }
+  
+  >button {
+    padding: 12px 2rem;
+    color: #FFF;
+    background: linear-gradient(90deg, #0DACEE -27.72%, #08D968 134.24%);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  ::before {
+    content: "";
+    background-image: url('../../assets/images/banner.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
