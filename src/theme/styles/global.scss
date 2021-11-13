@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+body, button, input {
+  font-family: 'Montserrat', 'Inter',  sans-serif;
+}
+
+button, input {
+  border: 0;
+}
+
+#Layout {
+  display: flex;
+  flex-direction: column;
+}
