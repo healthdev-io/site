@@ -2,7 +2,6 @@ import React from "react";
 import pep from "../../assets/images/pep.png";
 import telemedicine from "../../assets/images/telemedicine.png";
 import integrations from "../../assets/images/integrations.png";
-import banner from "../../assets/images/banner.png";
 import "./styles.scss";
 
 const OurServices: React.FC = () => {
