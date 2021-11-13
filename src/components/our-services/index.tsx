@@ -28,12 +28,19 @@ const OurServices: React.FC = () => {
     ];
   }, []);
 
+  const handleContact = React.useCallback(() => {
+    window.open(
+      "https://api.whatsapp.com/send?phone=5585999547116&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20da%20healthdev",
+      "blank"
+    );
+  }, [])
+
   return (
     <div id="OurServices">
       <h2>Nossos serviços</h2>
       <p>
         Somos especialistas em integrações com{" "}
-        <strong>softwares médicos</strong>,<br/>
+        <strong>softwares médicos</strong>,<br />
         <strong>prontuários eletrônicos</strong>, sistemas de regulação,
         <strong> telemedicina</strong> e muito mais.
       </p>
@@ -49,9 +56,10 @@ const OurServices: React.FC = () => {
       <div className="banner">
         <h1>Sua clínica mais eficiente!</h1>
         <p>
-          Não deixe de entrar em contato conosco, <br/> aqui nós desenvolvemos saúde.
+          Não deixe de entrar em contato conosco, <br /> aqui nós desenvolvemos
+          saúde.
         </p>
-        <button>Entrar em contato</button>
+        <button onClick={handleContact}>Entrar em contato</button>
       </div>
     </div>
   );
