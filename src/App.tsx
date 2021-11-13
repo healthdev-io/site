@@ -1,5 +1,6 @@
 import React from "react";
 import AboutUs from "./components/about-us";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from "./components/home";
 import OurContacts from "./components/our-contacts";
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <AboutUs />
       <OurServices />
       <OurContacts />
+      <Footer />
     </main>
   );
 };
