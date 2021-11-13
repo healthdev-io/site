@@ -2,6 +2,7 @@ import React from "react";
 import AboutUs from "./components/about-us";
 import Header from "./components/header";
 import Home from "./components/home";
+import OurServices from "./components/our-services";
 import "./theme/styles/global.scss";
 
 const App: React.FC = () => {
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <Header />
       <Home />
       <AboutUs />
+      <OurServices />
     </main>
   );
 };
