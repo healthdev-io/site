@@ -12,6 +12,12 @@
   scroll-behavior: smooth;
 }
 
+html {
+  @media(max-width: 1600px) {
+    font-size: 80%;
+  }
+}
+
 body {
   min-height: 100vh;
 }
