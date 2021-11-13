@@ -1,7 +1,7 @@
 #Home {
-  padding: 5rem;
+  padding: 7rem 10rem;
   display: flex;
-  gap: 3rem;
+  gap: 10rem;
   background-image: url('../../assets/images/background.png');
   position: relative;
 
@@ -19,7 +19,7 @@
 
   > div {
     > h1 {
-      font-size: 4.5rem;
+      font-size: 4.10rem;
       margin-bottom: 2rem;
       line-height: 135%;
       letter-spacing: 0.01em;
@@ -45,7 +45,7 @@
 
     > a {
       display: flex;
-      margin-top: 5rem;
+      margin-top: 10rem;
       width: 70px;
       height: 70px;
       border-radius: 50%;
