@@ -1,0 +1,33 @@
+header {
+  font-family: 'Inter';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 10px rgba(54, 134, 167, 0.2);
+  padding: 1rem 5rem; 
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  img {
+    height: 60px;
+  }
+
+  > nav {
+    > ul {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: 16px;
+
+        &.active {
+          color: red;
+        }
+      }
+    }
+  }
+}

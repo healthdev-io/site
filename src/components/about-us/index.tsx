@@ -3,6 +3,7 @@ import aboutUs from "../../assets/images/about-us.png";
 import projectManager from "../../assets/images/project-manager.png";
 import developer from "../../assets/images/developer.png";
 import designer from "../../assets/images/designer.png";
+import "./styles.scss";
 
 const AboutUs: React.FC = () => {
   const professionals = React.useMemo(() => {
