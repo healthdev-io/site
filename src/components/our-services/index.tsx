@@ -48,7 +48,9 @@ const OurServices: React.FC = () => {
       </ul>
       <div className="banner">
         <h1>Sua clínica mais eficiente!</h1>
-        <p>Não deixe de entrar em contato conosco, aqui nós desenvolvemos saúde.</p>
+        <p>
+          Não deixe de entrar em contato conosco, aqui nós desenvolvemos saúde.
+        </p>
         <button>Entrar em contato</button>
         <img src={banner} alt="Banner" />
       </div>
